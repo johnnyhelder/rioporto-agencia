@@ -21,3 +21,6 @@ header {
   color: #FF008A;
   text-align: center;
 }
+@media only screen and (max-width: 600px) {
+  /* Seu código CSS para dispositivos móveis vai aqui */
+}
