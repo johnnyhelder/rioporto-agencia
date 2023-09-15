@@ -1,66 +1,56 @@
-/* Reset some default browser styles */
-body, h1, h2, h3, p, ul {
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
-/* Add a background color and some padding around the whole page */
-body {
-    background-color: #f4f4f4;
-    color: #333;
-    font-family: Arial, sans-serif;
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.header, .footer {
+    background: #333;
+    color: #fff;
+    padding: 15px 0;
+}
+
+.header .logo img {
+    width: 100px;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.hero-section {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.services-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0;
+}
+
+.services-section article {
+    width: 30%;
     padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Style the header */
-header {
-    background-color: #333;
-    color: #fff;
+.footer {
     text-align: center;
-    padding: 10px;
-}
-
-/* Style the logo */
-.logo img {
-    max-width: 100px;
-}
-
-/* Style the navigation menu */
-nav ul {
-    background-color: #444;
-    overflow: hidden;
-    color: #fff;
-}
-
-nav ul li {
-    float: left;
-    display: inline;
-    padding: 14px 16px;
-}
-
-/* Style the main content */
-main {
-    margin: 15px;
-    padding: 15px;
-    background-color: #fff;
-}
-
-/* Style the footer */
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-
-/* Media Queries for responsiveness */
-@media (max-width: 600px) {
-    nav ul li {
-        float: none;
-        padding: 5px;
-        text-align: center;
-    }
 }
