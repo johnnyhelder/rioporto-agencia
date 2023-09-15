@@ -1,26 +1,66 @@
-/* Exemplo de Estilo Global */
+/* Reset some default browser styles */
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Add a background color and some padding around the whole page */
 body {
-  font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    font-family: Arial, sans-serif;
+    padding: 20px;
 }
 
-/* Exemplo de Estilo para o Navegador */
-nav {
-  background-color: #000;
-  color: white;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-  padding: 10px;
-}
-
-/* Estilo baseado em seu logotipo */
+/* Style the header */
 header {
-  background-color: #000;
-  color: #FF008A;
-  text-align: center;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
 }
-@media only screen and (max-width: 600px) {
-  /* Seu código CSS para dispositivos móveis vai aqui */
+
+/* Style the logo */
+.logo img {
+    max-width: 100px;
+}
+
+/* Style the navigation menu */
+nav ul {
+    background-color: #444;
+    overflow: hidden;
+    color: #fff;
+}
+
+nav ul li {
+    float: left;
+    display: inline;
+    padding: 14px 16px;
+}
+
+/* Style the main content */
+main {
+    margin: 15px;
+    padding: 15px;
+    background-color: #fff;
+}
+
+/* Style the footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 600px) {
+    nav ul li {
+        float: none;
+        padding: 5px;
+        text-align: center;
+    }
 }
