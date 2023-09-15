@@ -1,0 +1,23 @@
+/* Exemplo de Estilo Global */
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Exemplo de Estilo para o Navegador */
+nav {
+  background-color: #000;
+  color: white;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+}
+
+/* Estilo baseado em seu logotipo */
+header {
+  background-color: #000;
+  color: #FF008A;
+  text-align: center;
+}
